@@ -28,24 +28,24 @@ if amount > 0:
 
     print('\nCar with least amount of registration cost: \n')
     print(("{0:22s}" "{1:19s}" "{2:20s}" "{3:19s}").format("Proizvodjac:",\
-                                                           car_type[0]["naziv"],\
+                                                           car_type[0]["name"],\
                                                            "Vrsta goriva:",\
-                                                            car_type[0]["motor"]["vrsta"]))
+                                                            car_type[0]["engine"]["fuel_type"]))
 
     print(("{0:22s}" "{1:19s}" "{2:20s}" "{3:12.2f} cm^3  ").format("Model:",\
-                                                                    autici[0]["model"],\
-                                                                    "Zapremina motora:",\
-                                                                    autici[0]["motor"]["zapremina"]))
+                                                                    car_type[0]["model"],\
+                                                                    "volume engine:",\
+                                                                    car_type[0]["engine"]["volume"]))
 
     print(("{0:22s}" "{1:18d} " "{2:20s}" "{3:12.2f} K.S.  ").format("Godina proizvodnje:",\
-                                                                     autici[0]["godina"],\
-                                                                     "Snaga motora:",\
-                                                                     autici[0]["motor"]["snaga"]))
+                                                                     car_type[0]["godina"],\
+                                                                     "Snaga enginea:",\
+                                                                     car_type[0]["engine"]["power"]))
 
     print(("{0:22s}" "{1:18d} " "{2:20s}" "{3:12.2f} Dinara").format("Broj vrata:",\
-                                                                     autici[0]["br_vrata"],\
+                                                                     car_type[0]["br_vrata"],\
                                                                      "Cena registracije:",\
-                                                                     automobil.getCenaRegistracije(autici[0])))
+                                                                     car.price_of_registration(car_type[0])))
 
 
 
